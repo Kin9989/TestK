@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { FacebookProvider, CustomerChat } from 'react-facebook';
-
+import { FacebookProvider, MessengerCustomerChat } from 'react-facebook';
 
 const MessengerChat = () => {
   useEffect(() => {
@@ -22,8 +21,12 @@ const MessengerChat = () => {
   }, []);
 
   return (
-    <FacebookProvider appId="YOUR_APP_ID">
-      <CustomerChat pageId="113817248403137" attribution="biz_inbox" />
+    <FacebookProvider appId="100093455920327">
+      <MessengerCustomerChat
+        pageId="113817248403137"
+        appId="100093455920327"
+        htmlRef=""
+      />
     </FacebookProvider>
   );
 };
