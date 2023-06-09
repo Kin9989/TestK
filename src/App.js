@@ -8,7 +8,7 @@ function App() {
       Test Chat messger<br/>
       Kinranx
       hello what your name
-
+      <div id="fb-customer-chat" className="fb-customerchat" page_id="113817248403137"></div>
       <MessengerChat/>
     </div>
   );
