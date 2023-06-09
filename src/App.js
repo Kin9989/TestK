@@ -1,4 +1,4 @@
-import MessengerChat from './MessengerChat';
+import MessengerChat from './component/MessengerChat';
 import './App.css';
 
 function App() {
