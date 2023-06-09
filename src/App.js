@@ -1,4 +1,4 @@
-
+import MessengerChat from './MessengerChat';
 import './App.css';
 
 function App() {
@@ -7,9 +7,9 @@ function App() {
       Hello My App <br/>
       Test Chat messger<br/>
       Kinranx
-      hello
+      hello what your name
 
-      
+      <MessengerChat/>
     </div>
   );
 }
