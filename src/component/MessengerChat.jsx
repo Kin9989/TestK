@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
+import { FacebookProvider, CustomerChat } from 'react-facebook';
 
 const MessengerChat = () => {
   useEffect(() => {
-    window.fbAsyncInit = function () {
-      FB.init({
+    window.fbAsyncInit = function() {
+      window.FB.init({
         xfbml: true,
-        version: 'v17.0',
+        version: 'v17.0'
       });
     };
 
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s);
       js.id = id;
@@ -21,10 +21,9 @@ const MessengerChat = () => {
   }, []);
 
   return (
-    <div>
-      <div id="fb-root"></div>
-      <div id="fb-customer-chat" className="fb-customerchat"></div>
-    </div>
+    <FacebookProvider appId="YOUR_APP_ID">
+      <CustomerChat pageId="113817248403137" attribution="biz_inbox" />
+    </FacebookProvider>
   );
 };
 
