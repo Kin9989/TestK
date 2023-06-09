@@ -1,6 +1,6 @@
 import React from 'react';
 // import MessengerChat from './MessengerChat';
-import MessengerCustomerChat from 'react-messenger-customer-chat ';
+import ReactMessengerCustomerChat from 'react-messenger-customer-chat';
 
 function App() {
   return (
