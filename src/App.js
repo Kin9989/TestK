@@ -1,5 +1,6 @@
 import React from 'react';
-import MessengerChat from './MessengerChat';
+// import MessengerChat from './MessengerChat';
+import MessengerCustomerChat from 'react-messenger-customer-chat ';
 
 function App() {
   return (
@@ -8,8 +9,11 @@ function App() {
       Test Chat messger<br/>
       Kinranx
       hello what your name
-      <div id="fb-customer-chat" className="fb-customerchat" page_id="113817248403137"></div>
-      <MessengerChat/>
+      <MessengerCustomerChat
+      pageId="113817248403137"
+      appId="954564055758448"
+      
+  />,
     </div>
   );
 }
